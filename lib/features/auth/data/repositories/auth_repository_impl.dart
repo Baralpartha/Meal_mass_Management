@@ -4,7 +4,7 @@ import '../../../../core/error/failures.dart';
 import '../../../../config/env/local_storage_service.dart';
 import '../../../../core/exceptions/exceptions.dart';
 import '../../domain/entities/member_entity.dart';
-import '../datasources/auth_remote_dataSource.dart';
+import '../datasources/auth_remote_datasource.dart';
 import '../../domain/repositories/auth_repository.dart';
 
 

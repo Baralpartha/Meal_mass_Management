@@ -4,17 +4,15 @@ import 'package:google_fonts/google_fonts.dart';
 class AppTheme {
   AppTheme._();
 
-  // Brand colours
-  static const Color primary = Color(0xFF1B5E20);       // deep green
+  static const Color primary = Color(0xFF1B5E20);
   static const Color primaryLight = Color(0xFF4CAF50);
   static const Color primaryDark = Color(0xFF003300);
-  static const Color accent = Color(0xFFFFB300);         // amber
+  static const Color accent = Color(0xFFFFB300);
   static const Color error = Color(0xFFD32F2F);
   static const Color success = Color(0xFF388E3C);
   static const Color warning = Color(0xFFF57C00);
   static const Color info = Color(0xFF0288D1);
 
-  // Semantic balance colours
   static const Color advance = Color(0xFF2E7D32);
   static const Color due = Color(0xFFC62828);
   static const Color settled = Color(0xFF1565C0);
@@ -44,7 +42,7 @@ class AppTheme {
           color: Colors.white,
         ),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(                          // ← CardThemeData not CardTheme
         elevation: 2,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
@@ -55,8 +53,7 @@ class AppTheme {
           foregroundColor: Colors.white,
           minimumSize: const Size(double.infinity, 52),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          textStyle: GoogleFonts.nunito(
-              fontSize: 16, fontWeight: FontWeight.w700),
+          textStyle: GoogleFonts.nunito(fontSize: 16, fontWeight: FontWeight.w700),
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
@@ -64,17 +61,14 @@ class AppTheme {
           foregroundColor: primary,
           minimumSize: const Size(double.infinity, 52),
           side: const BorderSide(color: primary, width: 1.5),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          textStyle: GoogleFonts.nunito(
-              fontSize: 16, fontWeight: FontWeight.w600),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          textStyle: GoogleFonts.nunito(fontSize: 16, fontWeight: FontWeight.w600),
         ),
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: Colors.grey.shade50,
-        contentPadding:
-            const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: BorderSide(color: Colors.grey.shade300),

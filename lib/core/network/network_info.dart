@@ -1,5 +1,19 @@
-import 'package:dartz/dartz.dart';
-import '../error/failures.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:injectable/injectable.dart';
 
-typedef Result<T> = Future<Either<Failure, T>>;
-typedef SyncResult<T> = Either<Failure, T>;
+abstract class NetworkInfo {
+  Future<bool> get isConnected;
+}
+
+@LazySingleton(as: NetworkInfo)
+class NetworkInfoImpl implements NetworkInfo {
+  final Connectivity connectivity;
+
+  NetworkInfoImpl(this.connectivity);
+
+  @override
+  Future<bool> get isConnected async {
+    final result = await connectivity.checkConnectivity();
+    return !result.contains(ConnectivityResult.none);
+  }
+}

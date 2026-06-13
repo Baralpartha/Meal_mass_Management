@@ -6,11 +6,11 @@ class EnvConfig {
 
   static const String supabaseUrl = String.fromEnvironment(
     'SUPABASE_URL',
-    defaultValue: 'https://YOUR_PROJECT_ID.supabase.co',
+    defaultValue: 'https://ezdkiepefzecosxjofxx.supabase.co',
   );
 
   static const String supabaseAnonKey = String.fromEnvironment(
     'SUPABASE_ANON_KEY',
-    defaultValue: 'YOUR_ANON_KEY',
+    defaultValue: 'sb_publishable_WaSAtRnmIii-x9m3xOwbEw_Eqr6Mh6n',
   );
 }

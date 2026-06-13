@@ -13,26 +13,26 @@ import '../core/network/network_info.dart';
 import '../features/auth/data/datasources/auth_remote_datasource.dart';
 import '../features/auth/data/repositories/auth_repository_impl.dart';
 import '../features/auth/domain/repositories/auth_repository.dart';
-import '../features/auth/domain/usecases/auth_usecases.dart';
+import '../features/auth/domain/usecases/auth_usecase.dart';
 import '../features/auth/presentation/bloc/auth_bloc.dart';
 
 // Members
+import '../features/cycles/domain/usecases/cycles_usecase.dart';
+import '../features/meals/data/repositories/meals_repository.dart';
 import '../features/members/data/datasources/members_remote_datasource.dart';
 import '../features/members/data/repositories/members_repository_impl.dart';
 import '../features/members/domain/repositories/members_repository.dart';
-import '../features/members/domain/usecases/members_usecases.dart';
+import '../features/members/domain/usecases/members_usecase.dart';
 import '../features/members/presentation/bloc/members_bloc.dart';
 
 // Cycles
 import '../features/cycles/data/datasources/cycles_remote_datasource.dart';
 import '../features/cycles/data/repositories/cycles_repository_impl.dart';
 import '../features/cycles/domain/repositories/cycles_repository.dart';
-import '../features/cycles/domain/usecases/cycles_usecases.dart';
 import '../features/cycles/presentation/bloc/cycles_bloc.dart';
 
 // Meals
 import '../features/meals/data/datasources/meals_remote_datasource.dart';
-import '../features/meals/data/repositories/meals_repository_impl.dart';
 import '../features/meals/domain/repositories/meals_repository.dart';
 import '../features/meals/domain/usecases/meals_usecases.dart';
 import '../features/meals/presentation/bloc/meals_bloc.dart';
